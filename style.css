@@ -1,0 +1,88 @@
+/* 
+.pookalam-OuterFrame{
+      width: 200px;
+      height: 200px;
+      background: yellow;
+      clip-path: polygon(
+        25% 0%, 75% 0%,
+        100% 50%,
+        75% 100%, 25% 100%,
+        0% 50%
+      );
+      border-radius: 50%; 
+      margin: 50px auto;
+    
+}
+.pookalam-OuterFrame .f1{
+    width: 100%;
+    height: 100%;
+    background-color:#E9F00C;
+}
+.pookalam-OuterFrame .f2{
+    width: 100%;
+    height: 100%;
+    background-color:#FF990B;
+    transform: rotate(27.66deg);
+    
+} 
+.pookalam-OuterFrame .f1, .pookalam-OuterFrame .f2{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    clip-path: inherit;
+    border-radius: inherit;
+} */
+ .pookalam-petals{
+   
+    position: relative;
+    margin: 50px auto;
+    display: flex;
+}
+.petal1, .petal3,  .petal5, .petal7, .petal9, .petal11{
+    width: 100px;
+    height: 150px;
+    background: yellow;
+     border-radius: 50% 50% 50% 50% / 65% 65% 30% 30%; 
+    position: relative;
+
+    
+}
+.petal1{
+    left: 150px;
+    top: 30px;
+    transform: rotate(30deg);}
+
+.petal3{
+     left: 30px;
+    top: -5px;
+    transform: rotate(90deg);
+}
+.petal5{
+     left: -50px;
+    top: -50px;
+    transform: rotate(150deg);
+}
+
+.petal7{
+     left: -100px;
+    top: -50px;
+    transform: rotate(210deg);
+}
+
+.petal9{
+     left: -180px;
+    top: -5px;
+    transform: rotate(270deg);
+}
+
+
+.petal11{
+     left: -300px;
+    top: 30px;
+    transform: rotate(330deg);
+}
+
+petal2{
+    width: 100px;
+    
+}
