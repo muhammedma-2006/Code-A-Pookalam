@@ -8,14 +8,12 @@
             overflow: hidden;
         }
 
-        /* --- Main Mandala Container --- */
         .mandala {
             position: relative;
             width: 450px;
             height: 450px;
         }
 
-        /* --- Helper to center all layers --- */
         .mandala > div {
             position: absolute;
             top: 50%;
@@ -23,29 +21,43 @@
             transform: translate(-50%, -50%);
         }
 
-        /* --- Background Leafy Layers --- */
-        .bg-layer {
-            border-radius: 50%;
-        }
-        .bg-layer-1 {
-            width: 100%; height: 100%;
-            background-color: #558B2F;
-            opacity: 0.9;
-        }
-        .bg-layer-2 {
-            width: 95%; height: 95%;
-            background-color: #8BC34A;
-            transform: translate(-50%, -50%) rotate(15deg);
-            opacity: 0.9;
-        }
-        .bg-layer-3 {
-            width: 90%; height: 90%;
-            background-color: #AED581;
-            transform: translate(-50%, -50%) rotate(-15deg);
-            opacity: 0.9;
+        .bg-shape-container {
+            width: 400px;
+            height: 400px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: -1; 
         }
 
-        /* --- General Petal Styling --- */
+        .bg-lobe-wrapper {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+        }
+
+        .bg-lobe {
+            position: absolute;
+            width: 300px; 
+            height: 300px;
+            background-color: #FFEB3B; 
+            border-radius: 50%;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%) translateY(-100px); 
+        }
+        
+      
+        .bg-lobe-wrapper:nth-child(1) { transform: rotate(0deg); }
+        .bg-lobe-wrapper:nth-child(2) { transform: rotate(60deg); }
+        .bg-lobe-wrapper:nth-child(3) { transform: rotate(120deg); }
+        .bg-lobe-wrapper:nth-child(4) { transform: rotate(180deg); }
+        .bg-lobe-wrapper:nth-child(5) { transform: rotate(240deg); }
+        .bg-lobe-wrapper:nth-child(6) { transform: rotate(300deg); }
+
+
+        
         .petal-wrapper {
             position: absolute;
             width: 100%;
@@ -58,13 +70,21 @@
             transform-origin: bottom center;
         }
         
-        /* --- Outer Petals (Base Shape) --- */
         .outer .petal {
             width: 100px;
             height: 140px;
             border-radius: 50%;
             transform: translate(-50%, -100%) translateY(-90px);
+            border: 1px solid #795548;
             z-index: 2;
+        }
+        .outer1 .petal {
+            width: 100px;
+            height: 140px;
+            border-radius: 50%;
+            transform: translate(-50%, -100%) translateY(-90px) rotate(30deg);
+            border: 1px solid #795548;
+            z-index: 3;
         }
         .inner1 .petal {
             width: 67.5px;
@@ -75,32 +95,7 @@
             transform: translate(-50%, -100%) translateY(-40px) rotate(-45deg);
             z-index: 4;
         }
-        /* --- NEW: Alternating Colors for Outer Petals --- */
-        .outer .petal-wrapper:nth-child(odd) .petal {
-            background: #FFA726; /* Orange for 1, 3, 5, etc. */
-        }
-        .outer .petal-wrapper:nth-child(even) .petal {
-            background: #FFEB3B; /* Yellow for 2, 4, 6, etc. */
-        }
         
-        .inner1 .petal-wrapper:nth-child(odd) .petal {
-            background: #FFA726; /* Orange for 1, 3, 5, etc. */
-        }
-        .inner1 .petal-wrapper:nth-child(even) .petal {
-            background: #FFEB3B; /* Yellow for 2, 4, 6, etc. */
-        }
-        .inner .petal-wrapper:nth-child(odd) .petal {
-            background: #FFA726; /* Orange for 1, 3, 5, etc. */
-        }
-        .inner .petal-wrapper:nth-child(even) .petal {
-            background: #FFEB3B; /* Yellow for 2, 4, 6, etc. */
-        }
-
-
-        /* --- Middle Yellow Petals --- */
-        
-        
-        /* --- Inner Orange Petals with Border --- */
         .inner .petal {
             width: 67.5px;
             height: 105px;
@@ -111,18 +106,24 @@
             z-index: 4;
         }
         
-        /* --- Center Disc with Conic Gradient --- */
+        .petal-wrapper:nth-child(even) .petal {
+            background: #FFEB3B; 
+        }
+        .petal-wrapper:nth-child(odd) .petal {
+            background: #FFA726; 
+        }
+        
         .center-disc {
             width: 100px;
             height: 100px;
-            background: repeating-conic-gradient(#33691E 0% 0.8%, #AED581 0.8% 1.6%);
+            background: repeating-conic-gradient(#33691E 0% 0.8%, #AED581 1% 1.6%);
             border-radius: 50%;
             border: 3px solid #FFEB3B;
             box-shadow: 0 0 10px rgba(0,0,0,0.3);
             z-index: 5;
         }
 
-        /* --- Rotations for 12 Petals --- */
+        
         .petal-wrapper:nth-child(1)  { transform: rotate(0deg); }
         .petal-wrapper:nth-child(2)  { transform: rotate(30deg); }
         .petal-wrapper:nth-child(3)  { transform: rotate(60deg); }
