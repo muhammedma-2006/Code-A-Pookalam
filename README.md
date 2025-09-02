@@ -10,6 +10,6 @@
  ## figma design
  <img width="679" height="536" alt="image" src="https://github.com/user-attachments/assets/4dbfaf26-9f36-4f0a-818c-74b9379db218" />
  
- ### languages-used
+ ## languages-used
  * HTML
  * CSS
