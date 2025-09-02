@@ -134,7 +134,7 @@
         .center-disc {
             width: 100px;
             height: 100px;
-            background: repeating-conic-gradient(#33691E 0% 0.8%, #AED581 1% 1.6%);
+             background: repeating-conic-gradient(#33691E 0.5% 1.5%,   #AED581 0.5% 1.8% );
             border-radius: 50%;
             border: 3px solid #FFEB3B;
             box-shadow: 0 0 10px rgba(0,0,0,0.3);
@@ -154,6 +154,4 @@
         .petal-wrapper:nth-child(10) { transform: rotate(270deg); }
         .petal-wrapper:nth-child(11) { transform: rotate(300deg); }
         .petal-wrapper:nth-child(12) { transform: rotate(330deg); }
-
-        /* Offset rotation for middle petal layer */
-       
+        
