@@ -4,7 +4,10 @@
  *I am Muhammed M A
  Btech Student in Cusat*
  
- pookalam:https://muhammedma-2006.github.io/Code-A-Pookalam/
+ ## pookalam:
+ https://muhammedma-2006.github.io/Code-A-Pookalam/
+ #### description: 
+ It is a digital version of this traditional art form. Instead of using physical flowers, this Pookalam is rendered using web technologies like HTML and CSS. The vibrant colors, symmetrical patterns, and layered petal designs are all achieved through code.
 
  
  ## figma design
